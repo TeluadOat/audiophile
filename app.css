@@ -1,0 +1,703 @@
+:root {
+    --primary-color: #101010;
+    --secondary-color: #f1f1f1;
+    --sec2-color: #e6e6e6;
+    --font-color-main: hsl(0, 0%, 100%);
+    --colour-btn: #d87c49;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#page {
+    max-width: 100%;
+    border: 2px dashed hotpink;
+}
+
+.generic-name {
+    text-transform: uppercase;
+}
+
+#header {
+    font-size: 1rem;
+    /* height: 20em; */
+    /* background-color: bisque; */
+    padding: 0 10em 6em;
+    position: relative;
+    background-image: url(./images/sebastian-banasiewcz-oXXc-s5nNy8-unsplash\ \(1\).jpg),
+        linear-gradient(black, black);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 80% 60%;
+    /* aspect-ratio: 16/9; */
+    /* border: 2px dashed green; */
+    background-attachment: scroll;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.hero-logo {
+    font-size: 2rem;
+    display: inline-block;
+}
+
+#nav-bar {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5em 0;
+    font-size: 1em;
+    color: var(--font-color-main);
+    border-bottom: 1px solid grey;
+}
+
+
+#check-out-cart {
+    font-size: 1.5rem;
+}
+
+
+.prods {
+    display: flex;
+    list-style-type: none;
+    gap: 1.5em;
+    align-items: center;
+}
+
+.prods a {
+    text-decoration: none;
+    color: inherit;
+    text-transform: uppercase;
+}
+
+#hero-infos {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 50px;
+    font-size: 10px;
+}
+
+#hero-infos>p:first-of-type {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 0.9em;
+    color: aliceblue;
+}
+
+#hero-infos>p:nth-of-type(2) {
+    text-transform: uppercase;
+    font-size: 3.5em;
+    color: white;
+}
+
+#hero-infos .paras {
+    color: #fff;
+}
+
+.paras {
+    font-size: 1.3rem;
+    line-height: 1.4;
+}
+
+.btn-c {
+    background-color: var(--colour-btn);
+    text-transform: uppercase;
+    display: inline-block;
+    width: 8rem;
+    font-size: 0.7rem;
+    color: #fff;
+    text-decoration: none;
+    line-height: 1.7;
+    padding: 0.8rem 1.3rem;
+    text-align: center;
+}
+
+
+#main-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    margin: 9em 10em 0;
+    font-size: 10px;
+    max-width: 100%;
+    gap: 10em;
+}
+
+#shops {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    gap: 2em;
+    border: 2px dashed green;
+    max-width: 100%;
+}
+
+.shop {
+    position: relative;
+    border: 2px dashed red;
+    width: 30%;
+    height: 10em;
+    background-color: rgb(243, 240, 240);
+    border-radius: 0.5em;
+}
+
+.shop>.shop-image {
+    height: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 1em;
+    align-items: center;
+    padding: 0 0.5em 1em;
+    text-transform: uppercase;
+
+}
+
+.shop>.shop-image>img {
+    width: 8em;
+    position: absolute;
+    top: -55%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    /* border: 1px solid brown; */
+    /* box-shadow: 0 2px 2px 4px rgba(0, 0, 0, 0.25); */
+
+}
+
+.shop-image>p {
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.shop-image a {
+    text-decoration: none;
+    color: rgb(83, 77, 77);
+}
+
+.shop-image .icon {
+    margin-left: 1em;
+    color: var(--colour-btn);
+}
+
+#see-products {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    max-width: 100%;
+    border: 2px dashed green;
+    font-size: 1em;
+    gap: 2em;
+}
+
+#see-products>.see1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border: 2px dashed hotpink;
+    /* background: linear-gradient(yellow); */
+    overflow-y: hidden;
+    font-size: 1em;
+}
+
+.see1-image {
+    height: 400px;
+    width: 35em;
+    background: url(./images/shop-speaker.png), grey;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: local;
+    position: relative;
+    /* background-position: 0 20px; */
+    top: 9em;
+    left: -3em;
+}
+
+#main-content .info {
+    display: flex;
+    gap: 1.5em;
+    flex-direction: column;
+}
+
+.see1 .info {
+    background-color: transparent;
+    align-self: center;
+    width: 35%;
+    font-size: 1em;
+    background-color: antiquewhite;
+}
+
+.see1 .info>.generic-name {
+    font-size: 2em;
+}
+
+.see1 .info .btn-c {
+    background-color: var(--primary-color);
+}
+
+.see2 {
+    position: relative;
+    height: 20em;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    border: 2px dashed blue;
+}
+
+.see2-image {
+    height: 100%;
+    width: 80em;
+    position: absolute;
+    border: 2px dashed yellowgreen;
+    right: -32em;
+    bottom: 32em;
+}
+
+.see2-image>img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.see2 .info {
+    margin-left: 5em;
+    margin-top: 10em;
+    transform: translateY(-50%);
+}
+
+.see2 .info .generic-name,
+.see3 .info .generic-name {
+    font-size: 1.3em;
+}
+
+.see2 .info .btn-c,
+.see3 .info .btn-c {
+    background-color: inherit;
+    outline: 1.3px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.see3 {
+    border: 2px dashed blue;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2em;
+    height: 20em;
+}
+
+.see3-image {
+    grid-column: 1/2;
+    border: 2px dashed orange;
+    height: 100%;
+    position: relative;
+}
+
+.see3 .info {
+    grid-column: 2/2;
+    border: 2px dashed orange;
+    padding-top: 6.5em;
+    padding-left: 15%;
+}
+
+.see3-image>img {
+    width: 100%;
+    object-fit: contain;
+    height: 15em;
+    max-height: 100%;
+    position: absolute;
+    top: 10%;
+}
+
+#adv {
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
+    border: 2px dashed blue;
+}
+
+#adv figure {
+    height: 400px;
+    width: 100%;
+    border: 2px dashed green;
+}
+
+#adv figure img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+#adv .info {
+    justify-content: center;
+    height: 100%;
+    width: 80%;
+}
+
+#adv .info span {
+    color: var(--colour-btn);
+}
+
+#adv .info p:first-of-type {
+    text-transform: uppercase;
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    margin: 9em 0em 0em;
+    padding: 5em 10em 3em;
+    max-width: 100%;
+    gap: 3em;
+    color: white;
+    background-color: var(--primary-color, #000000);
+    font-size: 10px;
+}
+
+footer>#f-hero {
+    grid-column: 1/-1;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+footer #socials {
+    font-size: 2.5rem;
+    display: flex;
+    gap: 0.4em;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+footer .prods {
+    justify-content: flex-end;
+}
+
+footer #cright {
+    font-size: 1em;
+}
+
+
+@media (max-width: 768px) {
+    #header {
+        background-position: 50%, 0%;
+        padding-right: 2.5em;
+        padding-left: 2.5em;
+    }
+
+    #nav-drop {
+        display: none;
+        position: absolute;
+        top: 5.5em;
+        /* z-index: 10; */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    #nav-drop.show {
+        display: block;
+    }
+
+    #products {
+        display: block;
+        padding: 1em 1em;
+        background-color: rgb(34, 30, 30);
+        width: 10em;
+    }
+
+    /* li {
+        background-color: antiquewhite;
+        margin-bottom: 0.5em;
+    } */
+
+    #products a {
+        line-height: 2;
+    }
+
+    #menu-toggle {
+        display: inline-block;
+        margin-right: 2em;
+        font-size: 1.5em;
+    }
+
+    #hero-infos {
+        align-items: center;
+        text-align: center;
+    }
+
+    .btn-c {
+        display: block;
+        width: 17rem;
+        line-height: 1.4;
+        font-size: 1.5rem;
+    }
+
+    #main-content {
+        margin-left: 2.5em;
+        margin-right: 2.5em;
+        font-size: 13px;
+        gap: 6em;
+    }
+
+    .shop-image {
+        max-height: 80%;
+        margin-top: 1.5em;
+    }
+
+    .shop>.shop-image>img {
+        top: -70%;
+    }
+
+    .paras {
+        font-size: 1.5rem;
+    }
+
+    #see-products>.see1 {
+        flex-direction: column;
+        height: 55em;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 3em;
+        gap: 0;
+    }
+
+    .see1-image {
+        top: 0;
+        left: 0;
+        background-size: contain;
+        width: 50%;
+        height: 30em;
+    }
+
+    .see1 .info {
+        background-color: transparent;
+        width: 70%;
+        font-size: 1em;
+        background-color: antiquewhite;
+        align-items: center;
+        text-align: center;
+    }
+
+    .see2-image {
+        right: -45em;
+    }
+
+    /* .see2,
+    .see3 {
+        height: 22em;
+    } */
+
+    .see2 .info .generic-name,
+    .see3 .info .generic-name {
+        font-size: 1.7em;
+    }
+
+    #adv {
+        grid-template-rows: repeat(2, auto);
+        grid-template-columns: 1fr;
+        width: 100%;
+        gap: 6em;
+    }
+
+    #adv figure {
+        grid-row: 1/span 2;
+        border: 2px dashed indianred;
+        height: 30em;
+        width: 100%;
+        position: relative;
+    }
+
+    #adv figure img {
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+        object-position: 50% 33%;
+    }
+
+    #adv .info {
+        grid-row: 2/ span 2;
+        text-align: center;
+        justify-content: flex-start;
+        width: 100%;
+        border: 2px dashed cyan;
+    }
+
+    #adv figure img {
+        height: 100%;
+        object-fit: cover;
+        width: 100%;
+        position: relative;
+    }
+
+    footer {
+        padding: 6em 4.5em 3em;
+    }
+
+    footer>#f-hero {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 3em;
+    }
+
+    footer>.paras {
+        grid-column: 1/-1;
+        width: 100%;
+        margin-bottom: 3em;
+    }
+
+    footer #socials {
+        grid-column: 2;
+    }
+
+    footer #cright {
+        grid-row: 3;
+    }
+}
+
+@media (max-width:480px) {
+    #toggle-hero {
+        display: flex;
+        justify-content: space-between;
+        width: 60%;
+    }
+
+    #header {
+        padding-left: 0;
+        padding-right: 0;
+        background-size: cover;
+        background-position: 50% 10%, 0%;
+    }
+
+    #nav-bar {
+        padding-left: 2.5em;
+        padding-right: 2.5em;
+    }
+
+    #hero-infos {
+        font-size: 13px;
+    }
+
+    .btn-c {
+        font-size: 1.2rem;
+        width: 13rem;
+        padding-left: 0.7rem;
+        padding-right: 0.7rem;
+    }
+
+
+    #main-content {
+        font-size: 9px;
+        margin-top: 9em;
+
+    }
+
+    #shops {
+        flex-direction: column;
+        gap: 3em;
+    }
+
+    .shop:nth-of-type(-n+2) {
+        margin-bottom: 3em;
+    }
+
+    .shop {
+        width: 100%;
+        height: 14em;
+    }
+
+    .shop>.shop-image {
+        gap: 0.9em;
+        font-size: 1.15em;
+    }
+
+    .shop>.shop-image>img {
+        top: -40%;
+    }
+
+    .see2-image {
+        right: -30em;
+        width: 50em;
+        bottom: 15em;
+    }
+
+    .see2-image>img {
+        object-fit: contain;
+    }
+
+    .see3 {
+        grid-template-columns: 1fr;
+        grid-template-rows: 20em 20em;
+        row-gap: 2em;
+        width: 100%;
+    }
+
+    .see3-image {
+        grid-row: 1/span 1;
+        grid-column: 1;
+        position: relative;
+        height: 100%;
+    }
+
+    .see3 .info {
+        grid-row: 2;
+        grid-column: 1;
+        height: 100%;
+        width: 100%;
+        padding-left: 4.5em;
+    }
+
+    .see3-image>img {
+        position: absolute;
+        /* Remove absolute positioning for normal flow */
+        height: 17em;
+        object-fit: contain;
+        /* or contain */
+    }
+
+    #adv .info:first-child {
+        line-height: 1.5;
+    }
+
+    footer {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+        text-align: center;
+    }
+
+    footer>#f-hero {
+        align-items: center;
+    }
+
+    footer .prods {
+        flex-direction: column;
+    }
+
+    footer>.paras {
+        margin-bottom: 0;
+    }
+
+    footer #socials {
+        grid-column: 1;
+        grid-row: 4;
+        justify-content: center;
+    }
+
+    footer #cright {
+        grid-row: 3;
+    }
+}
