@@ -229,7 +229,7 @@ button.btn-c {
 .see1-image {
     height: 100%;
     width: 50%;
-    background: url(/audiophile-site/images/shop-speaker.webp);
+    background: url(../images/shop-speaker.webp);
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
