@@ -4,11 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audiophile site/cart</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/app.css">
-    <title>Audiophile site</title>
+    <link rel="stylesheet" href="./css/app2.css">
 </head>
 
 <body>
@@ -30,19 +31,93 @@
 
                 <a href="./checkout.html"><span id="check-out-cart"><i class="fa-solid fa-cart-shopping"></i></span></a>
             </nav>
-            <div id="hero-infos">
-                <p>New Product</p>
-                <p class="generic-name">xx99 mark ii <br> Headphones</p>
-                <p class="paras">Experience natural, lifelike audio and exceptional <br>
-                    build quality made for the passionate music
-                    <br>
-                    enthusiast
-                </p>
-                <a class="btn-c" href="./indexxx9markii.html">see product</a>
-            </div>
         </header>
-
+        <a class="goback-link" href="./index.html">Go Back</a>
         <main id="main-content">
+
+            <article id="first-g">
+                <figure class="figfig">
+                    <img src="./images/cart-image-2.png" alt="image">
+                </figure>
+                <div>
+                    <p>New Product</p>
+                    <p class="generic-name">xx99 mark ii <br> Headphones</p>
+                    <p class="paras">The new XX99 Mark II headphones is the pinnacle of prisitine audio. It redefines
+                        your premium headphone experience by reproducing the balanced depth and precision of
+                        studio-quality sound.
+                    </p>
+                    <strong id="data-price">$ 2,999</strong>
+                    <div><span><button class="decrease">-</button><span class="count">1</span><button
+                                class="increase">+</button></span><button class="btn-c" href="#">add to cart</button>
+                    </div>
+                </div>
+            </article>
+
+            <article id="contents">
+                <div id="features">
+                    <h3>features</h3>
+                    <p class="paras">
+                        Featuring a genuine leather head strap and premium earcups, these headphones deliver superior
+                        comfort for those who like to enjoy endless listening. It includes intuitive controls designed
+                        for
+                        any situation. Whether you're taking business call or just in your own personal space, the auto
+                        on/off and pause features ensure that you'll never miss a beat.
+                    </p>
+                    <p class="paras">The advanced Active Noise Cancellation with built-in equalizer allow you to
+                        experience
+                        your audio world on your terms. It lets you enjoy your audio in peace, but quickly interact with
+                        your surroundings when you need to. Combined with bluetooth 5.0 compliant connectivity and 17
+                        hours
+                        battery life, the XX99 Mark II headphones gives you the superior sound, cutting-edge technology,
+                        and
+                        a modern design aesthetic. </p>
+                </div>
+                <div id="box-contents">
+                    <h3>in the box</h3>
+                    <span id="box-content-items">
+                        <p class="paras"><strong class="it-unit">1x</strong>Headphones Unit</p>
+                        <p class="paras"><strong class="it-unit">2x</strong>Replacement Earcups</p>
+                        <p class="paras"><strong class="it-unit">1x</strong>User Manual</p>
+                        <p class="paras"><strong class="it-unit">1x</strong>3.5mm 5m Audio Cable</p>
+                        <p class="paras"><strong class="it-unit">1x</strong>Travel Bag</p>
+                    </span>
+                </div>
+            </article>
+
+
+            <div id="xx99-images">
+                <figure><img src="./images/jair-medina-nossa--7Kkov230I0-unsplash.webp" alt="img"></figure>
+                <figure><img src="./images/ravi-varma-injeti-CgQn8sn6p9I-unsplash.jpg" alt="img"></figure>
+                <figure><img src="./images/hero-image.webp" alt="img"></figure>
+            </div>
+
+            <article id="recommended">
+                <h3>you may also like</h3>
+                <section id="recommended-products">
+                    <div>
+                        <figure>
+                            <img src="./images/shop-headphone.webp" alt="mark-1-img">
+                        </figure>
+                        <p class="generic-name">xx99 mark i</p>
+                        <a class="btn-c" href="">see product</a>
+                    </div>
+                    <div>
+                        <figure>
+                            <img src="./images/white-headphone1 copy.png" alt="xx59-img">
+                        </figure>
+                        <p class="generic-name">xx59</p>
+                        <a class="btn-c" href="">see product</a>
+                    </div>
+                    <div>
+                        <figure>
+                            <img src="./images/shop-speaker.webp" alt="mark-1-img">
+                        </figure>
+                        <p class="generic-name">zx9 speaker</p>
+                        <a class="btn-c" href="">see product</a>
+                    </div>
+                </section>
+            </article>
+
             <article id="shops">
                 <div class="shop headphones">
                     <div class="shop-image"><img src="./images/shop-headphone.webp" alt="headphone image">
@@ -63,41 +138,7 @@
                     </div>
                 </div>
             </article>
-            <article id="see-products">
-                <div class="see1">
-                    <div class="see1-image">
-                        <!-- <img src="./images/shop-speaker.webp" alt="speaker-image"> -->
-                    </div>
-                    <div class="info">
-                        <p class="generic-name">ZX9 <br> Speaker</p>
-                        <p class="paras">Upgrade to premium speakers that are <br> phenomenally built to deliver truly
-                            remarkable
-                            <br>sound
-                        </p>
-                        <a class="btn-c" href="#">see product</a>
-                    </div>
-                </div>
-                <div class="see2">
-                    <!-- <div class="overlay"></div> -->
-                    <div class="see2-image">
-                        <img src="./images/paul-esch-laurent-YU-OA2TvQRQ-unsplash.jpg" alt="speaker-image">
-                    </div>
-                    <div class="info">
-                        <p class="generic-name">ZX9 Speaker</p>
-                        <a class="btn-c" href="#">see product</a>
-                    </div>
-                </div>
-                <div class="see3">
-                    <!-- <div class="overlay"></div> -->
-                    <div class="see3-image">
-                        <img src="./images/shop-earphone.webp" alt="speaker-image">
-                    </div>
-                    <div class="info">
-                        <p class="generic-name">YX1 Earphones</p>
-                        <a class="btn-c" href="#">see product</a>
-                    </div>
-                </div>
-            </article>
+
             <article id="adv">
                 <div>
                     <div class="info">
@@ -138,7 +179,7 @@
             <span id="cright">Copyright 2021. All Rights Reserved</span>
         </footer>
     </div>
-    <script src="app.js"></script>
+    <script src="./js/app.js"></script>
 </body>
 
 </html>

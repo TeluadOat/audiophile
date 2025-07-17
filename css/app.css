@@ -12,6 +12,11 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 html {
     font-size: 10px;
     font-family: Arial, Helvetica, sans-serif;
@@ -26,18 +31,15 @@ html {
 }
 
 #header {
+    /* width: 100%; */
     font-size: 1rem;
-    /* height: 20em; */
-    /* background-color: bisque; */
     padding: 0 10em 6em;
     position: relative;
-    background-image: url(./images/sebastian-banasiewcz-oXXc-s5nNy8-unsplash\ \(1\).jpg),
+    background-image: url(./images/hero-image.webp),
         linear-gradient(black, black);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 80% 60%;
-    /* aspect-ratio: 16/9; */
-    /* border: 2px dashed green; */
     background-attachment: scroll;
 }
 
@@ -121,8 +123,16 @@ html {
     line-height: 1.7;
     padding: 0.8rem 1.3rem;
     text-align: center;
+    cursor: pointer;
 }
 
+button.btn-c {
+    border: none;
+}
+
+.btn-c:hover {
+    background-color: rgb(195, 103, 54);
+}
 
 #main-content {
     display: grid;
@@ -144,7 +154,7 @@ html {
 
 .shop {
     position: relative;
-    width: 30%;
+    width: 100%;
     height: 10em;
     background-color: var(--secondary-color);
     border-radius: 10px;
@@ -166,13 +176,10 @@ html {
 .shop>.shop-image>img {
     width: 8em;
     position: absolute;
-    top: -55%;
+    top: -45%;
     left: 50%;
     transform: translateX(-50%);
     border-radius: 50%;
-    /* border: 1px solid brown; */
-    /* box-shadow: 0 2px 2px 4px rgba(0, 0, 0, 0.25); */
-
 }
 
 .shop-image>p {
@@ -222,13 +229,12 @@ html {
 .see1-image {
     height: 100%;
     width: 50%;
-    background: url(./images/shop-speaker.png);
-    background-size: contain;
+    background: url(/audiophile-site/images/shop-speaker.webp);
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: 10% 100%;
     position: relative;
-    top: 18%;
-    left: 3%;
+    top: 0;
+    left: 0;
 }
 
 #main-content .info {
@@ -242,7 +248,6 @@ html {
     align-self: center;
     width: 50%;
     font-size: 1em;
-    /* background-color: antiquewhite; */
 }
 
 .see1 .info>.generic-name {
@@ -251,6 +256,10 @@ html {
 
 .see1 .info .btn-c {
     background-color: var(--primary-color);
+}
+
+.see1 .info .btn-c:hover {
+    background-color: #181818;
 }
 
 .see2 {
@@ -266,7 +275,6 @@ html {
     height: 100%;
     width: 80em;
     position: absolute;
-    border: 2px dashed yellowgreen;
     right: -32em;
     bottom: 32em;
 }
@@ -293,6 +301,11 @@ html {
     background-color: inherit;
     outline: 1.3px solid var(--primary-color);
     color: var(--primary-color);
+}
+
+.see2 .info .btn-c:hover,
+.see3 .info .btn-c:hover {
+    background-color: #ccc;
 }
 
 .see3 {
@@ -410,8 +423,6 @@ footer #cright {
         display: none;
         position: absolute;
         top: 5.5em;
-        /* z-index: 10; */
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     }
 
     #nav-drop.show {
@@ -422,16 +433,14 @@ footer #cright {
         display: block;
         padding: 1em 1em;
         background-color: rgb(34, 30, 30);
-        width: 10em;
+        width: 25em;
+        font-size: 1.2rem;
+        border-radius: 3px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     }
 
-    /* li {
-        background-color: antiquewhite;
-        margin-bottom: 0.5em;
-    } */
-
     #products a {
-        line-height: 2;
+        line-height: 3;
     }
 
     #menu-toggle {
@@ -465,7 +474,7 @@ footer #cright {
     }
 
     .shop>.shop-image>img {
-        top: -70%;
+        top: -50%;
     }
 
     .paras {
@@ -488,13 +497,6 @@ footer #cright {
                 var(--colour-btn) 79.6%);
     }
 
-
-
-
-
-
-
-
     .see1-image {
         position: relative;
         top: 0;
@@ -509,7 +511,6 @@ footer #cright {
         background-color: transparent;
         width: 70%;
         font-size: 1em;
-        /* background-color: antiquewhite; */
         align-items: center;
         text-align: center;
     }
@@ -607,6 +608,18 @@ footer #cright {
         padding-right: 2.5em;
     }
 
+    #nav-drop {
+        width: 100%;
+        left: 0;
+        padding: 0 1em;
+    }
+
+    #products {
+        width: 100%;
+        border: 2px dashed pink;
+        font-size: 1.3rem;
+    }
+
     #hero-infos {
         font-size: 13px;
     }
@@ -687,10 +700,8 @@ footer #cright {
 
     .see3-image>img {
         position: absolute;
-        /* Remove absolute positioning for normal flow */
         height: 17em;
         object-fit: contain;
-        /* or contain */
     }
 
     #adv .info:first-child {

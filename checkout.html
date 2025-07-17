@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cart_checkout</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/app.css">
+    <link rel="stylesheet" href="./css/app2.css">
+    <link rel="stylesheet" href="./css/checkout.css">
+</head>
+
+<body>
+    <div id="page">
+        <!-- the header-->
+        <header id="header">
+            <nav id="nav-bar">
+                <span id="toggle-hero"> <span id="menu-toggle"><i class="fa-solid fa-bars"></i></span>
+                    <p id="hero-logo" class="hero-logo">audiophile</p>
+                </span>
+                <div id="nav-drop">
+                    <ul id="products" class="prods">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Headphones</a></li>
+                        <li><a href="#">Speakers</a></li>
+                        <li><a href="#">Earphones</a></li>
+                    </ul>
+                </div>
+
+                <span id="check-out-cart"><i class="fa-solid fa-cart-shopping"></i></span>
+            </nav>
+        </header>
+        <a class="goback-link" href="./index.html">Go Back</a>
+
+
+        <main id="main-content">
+            <form id="pay" action="#" method="get">
+                <div id="form-div">
+
+                    <!--the form did not directly accept grid display, so i used a div to cover the forms content-->
+                    <section id="checkout">
+                        <h3>checkout</h3>
+                        <fieldset id="billing">
+                            <legend>
+                                <h5>billing details</h5>
+                            </legend>
+
+                            <label for="name">Name <input type="text" id="name" name="name" placeholder="Alexel Ward"
+                                    required></label>
+                            <label for="email">Email Address<input type="email" id="email" name="email"
+                                    placeholder="alexel@mail.com" required></label>
+                            <label for="contact-number">Phone Number <input id="contact-number" type="tel"
+                                    name="contact-number" placeholder="+1 202-555-0136" required></label>
+                        </fieldset>
+
+                        <fieldset id="customer-shopping-info">
+                            <legend>
+                                <h5>shopping info</h5>
+                            </legend>
+                            <label for="address">Address<input id="address" type="text" name="address"
+                                    placeholder="1137 Williams Avenue" required></label>
+                            <label for="zip-code">ZIP Code<input id="zip-code" type="text" name="zip-code"
+                                    placeholder="100001" required></label>
+                            <label for="city">City<input id="city" type="text" name="city" placeholder="New York"
+                                    required></label>
+                            <label for="country">Country<input id="country" type="text" name="country"
+                                    placeholder="United States" required></label>
+                        </fieldset>
+                        <fieldset id="payment">
+                            <legend>
+                                <h5>payment details</h5>
+                            </legend>
+                            <label for="">Payment Method </label>
+                            <label for="e-money-payment" class="payment-option"> <input id="e-money-payment"
+                                    type="radio" name="payment-method" checked>e-money</label>
+                            <label for="cash-on-delivery" class="payment-option"> <input id="cash-on-delivery"
+                                    type="radio" name="payment-method" checked>Cash on Delivery</label>
+
+                            <label for="e-money-number">e-Money Number<input id="e-money-number" type="text"
+                                    name="e-money-number" placeholder="238521993" pattern="\d{9}" required></label>
+                            <label for="e-money-pin">e-Money Pin<input id="e-money-pin" type="password"
+                                    name="e-money-pin" inputmode="numeric" maxlength="4" pattern="\d{4}"
+                                    placeholder="XXXX" required></label>
+                        </fieldset>
+                    </section>
+
+                    <section id="summary">
+                        <h4>summary</h4>
+                        <div class="checkout-item-summary">
+                            <span>
+                                <figure class="figfig"><img src="./images/cart-image-2.png" alt=""></figure>
+                                <span>
+                                    <p class="generic-name">XX95 MK II</p>
+                                    <p class="data-item-price">$ 2,999</p>
+                                </span>
+                            </span>
+                            <p class="paras">x1</p>
+                        </div>
+                        <div class="checkout-item-summary">
+                            <span>
+                                <figure class="figfig"><img src="./images/white-headphone1 copy.png" alt="xx59-headset">
+                                </figure>
+                                <span>
+                                    <p class="generic-name">XX59</p>
+                                    <p class="data-item-price">$ 899</p>
+                                </span>
+                            </span>
+                            <p class="paras">x2</p>
+                        </div>
+                        <div class="checkout-item-summary">
+                            <span>
+                                <figure class="figfig"><img src="./images/shop-earphone.webp" alt="yx1-earphone">
+                                </figure>
+                                <span>
+                                    <p class="generic-name">yx1</p>
+                                    <p class="data-item-price">$ 599</p>
+                                </span>
+                            </span>
+                            <p class="paras">x1</p>
+                        </div>
+                        <span>
+                            <p class="paras">total</p> <strong class="data-toal-price">$ 5,396</strong>
+                        </span>
+                        <span>
+                            <p class="paras">shipping</p> <strong class="data-shipping-fee">$ 5,396</strong>
+                        </span>
+                        <span>
+                            <p class="paras">vat (included)</p> <strong class="vat">$ 1,079</strong>
+                        </span>
+                        <span>
+                            <p class="paras">grand total</p> <strong class="data-grand-total">$ 5,446</strong>
+                        </span>
+                        <button class="btn-c">continue & pay</button>
+
+                    </section>
+                </div>
+            </form>
+        </main>
+
+
+        <footer>
+            <div id="f-hero">
+                <p class="hero-logo"> audiophile</p>
+                <ul id="foot-products" class="prods">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Headphones</a></li>
+                    <li><a href="#">Speakers</a></li>
+                    <li><a href="#">Earphones</a></li>
+                </ul>
+            </div>
+            <p class="paras">Audiophile is an all in one stop to fulfill your audio needs. We're a small team of music
+                lovers and sound specialists who are devoted to helping you get the most out of personal audio. Come and
+                visit our demo facilty - we're open 7 days a week. </p>
+            <span id="socials">
+                <span><i class="fa-brands fa-facebook"></i></span>
+                <span><i class="fa-brands fa-twitter"></i></span>
+                <span><i class="fa-brands fa-instagram"></i></span>
+            </span>
+            <span id="cright">Copyright 2021. All Rights Reserved</span>
+        </footer>
+    </div>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
