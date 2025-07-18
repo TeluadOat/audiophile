@@ -35,7 +35,7 @@ html {
     font-size: 1rem;
     padding: 0 10em 6em;
     position: relative;
-    background-image: url(./images/hero-image.webp),
+    background-image: url(../images/hero-image.webp),
         linear-gradient(black, black);
     background-size: contain;
     background-repeat: no-repeat;
@@ -616,7 +616,6 @@ footer #cright {
 
     #products {
         width: 100%;
-        border: 2px dashed pink;
         font-size: 1.3rem;
     }
 
