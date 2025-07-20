@@ -22,6 +22,8 @@ html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
+
 #page {
     max-width: 100%;
 }
@@ -403,6 +405,11 @@ footer #socials {
     align-items: flex-end;
 }
 
+footer .paras {
+    font-size: 1rem;
+}
+
+
 footer .prods {
     justify-content: flex-end;
 }
@@ -572,7 +579,8 @@ footer #cright {
         gap: 3em;
     }
 
-    footer>.paras {
+    footer .paras {
+        /* font-size: 1.3rem; */
         grid-column: 1/-1;
         width: 100%;
         margin-bottom: 3em;
@@ -723,7 +731,6 @@ footer #cright {
 
     footer>.paras {
         margin-bottom: 0;
-        font-size: 1.05rem;
     }
 
     footer #socials {
